@@ -1,0 +1,17 @@
+# delete all and reset
+
+iptables -F && iptables -X
+iptables -t nat -F
+iptables -t nat -X
+
+iptables -t mangle -F
+iptables -t mangle -X
+iptables -P INPUT ACCEPT
+iptables -P OUTPUT ACCEPT
+iptables -P FORWARD ACCEPT
+
+iptables -I FORWARD -o eno1 -i vboxnet0 -s 192.168.200.0/24 -m conntrack --ctstate NEW -j ACCEPT
+iptables -I FORWARD -m conntrack --ctstate NEW,ESTABLISHED,RELATED -j ACCEPT
+iptables -I POSTROUTING -t nat -o eno1 -j MASQUERADE
+echo 1 > /proc/sys/net/ipv4/ip_forward
+
