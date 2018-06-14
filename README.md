@@ -16,4 +16,4 @@ Remote Access Trojans should not be confused with the Remote Administration Tool
 * The Scripts folder contains the scripts used during this work. They are divided by usage category.
 
 ## Credits
-The project was realised by **Sandro Tiago Carlao** (tiago.sandro@hotmail.com), **Rosalie Truong** (rosa.g@windowslive.com) and **Nils Stampfli** (nils.stampfli94@gmail.com) for Bachelor Thesis of the [Bern University of Applied Sciences](www.bfh.ch).
+The project was realised by **Sandro Tiago Carlao** (tiago.sandro@hotmail.com), **Rosalie Truong** (rosa.g@windowslive.com) and **Nils Stampfli** (nils.stampfli94@gmail.com) for Bachelor Thesis of the [Bern University of Applied Sciences](http://www.bfh.ch).
